@@ -9,7 +9,7 @@ import errorMiddleware from './middlewares/error-middleware.js';
 const app = express();
 
 const corsOptions = {
-    origin: "https://authxzenith.vercel.app/",
+    origin: process.env.CORS_ORIGIN,
     methods: "GET, POST, PUT, DELETE",
     credentials: true
 }
